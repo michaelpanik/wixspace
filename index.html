@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Build aStunningWebsite - WixSpace</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
+
+    <style>
+        html {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 1em;
+            text-align: center;
+        }
+
+        #logo {
+            max-width: 250px;
+        }
+
+        section#top {
+            background: url(./img/hero.jpg) bottom right;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .hero {
+            width: 1170px;
+            max-width: 100%;
+            padding: 1em 15px;
+        }
+
+        .hero>h1 {
+            font-size: 3em;
+        }
+
+        .hero>* {
+            position: relative;
+        }
+
+        .btn {
+            background: #010101;
+            padding: 1em 1.5em;
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            margin-right: 2em;
+        }
+
+        .btn:focus,
+        .btn:hover {
+            background: #fff;
+            color: #010101;
+        }
+
+        p {
+            margin-bottom: 2em;
+        }
+
+        span.addition {
+            font-family: 'Indie Flower', script;
+            color: darkred;
+            position: absolute;
+            top: -1em;
+        }
+
+        span.addition:before {
+            content: '\\/';
+            position: relative;
+            top: 10px;
+        }
+
+        section#testimonial {
+            width: 1170px;
+            padding: 3em 15px;
+            margin: 0 auto;
+        }
+
+        section#testimonial h2 {
+            font-size: 1.33em;
+            color: #888;
+            font-weight: normal;
+        }
+
+        article.testimonial {
+            margin-bottom: 2em;
+            padding-bottom: 4em;
+            border-bottom: 1px solid lightgray;
+        }
+
+        article.testimonial:last-child {
+            border: none;
+        }
+
+        article.testimonial h3 {
+            font-size: 3em;
+            color: #545454;
+        }
+
+        h3>small {
+            display: block;
+            font-size: .33em;
+            margin-top: 1em;
+            color: lightgray;
+        }
+
+        section#testimonial blockquote {
+            font-size: 20px;
+            line-height: 1.75em;
+            padding: 0;
+            margin: 0;
+            color: gray;
+        }
+
+        blockquote>p:after,
+        blockquote>p:before {
+            position: absolute;
+            font-family: 'Georgia', serif;
+            font-size: 3em;
+            font-style: italic;
+            opacity: .25;
+        }
+
+        blockquote>p:before {
+            content: '“';
+            left: -.25em;
+            top: .1em
+        }
+
+        blockquote>p:after {
+            content: '”';
+            bottom: -.1em;
+            margin-left: -.25em
+        }
+
+        blockquote>p {
+            position: relative;
+        }
+
+        .testimonial>section {
+            padding-left: 250px;
+        }
+
+        .testimonial img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        footer {
+            text-align: center;
+            background: #dedede;
+            padding-top: 2em;
+        }
+
+        footer>section {
+            background: #010101;
+            color: #dadada;
+            text-align: left;
+            padding: 1em 15px;
+        }
+
+        #footer-links>li {
+            display: inline-block;
+            padding: 0 .5em;
+        }
+
+        #footer-links {
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        footer a {
+            color: #dedede;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/logo.png" alt="" id="logo">
+    </header>
+
+    <main>
+        <section id="top">
+            <div class="hero">
+                <h1>Make it
+                    <span class="addition">stunning</span>
+                    <del>beautiful</del>
+                </h1>
+                <p>Build your own
+                    <span class="addition">stunning</span> website.</p>
+                <a href="http://base205.com" class="btn btn-lg">Start a Free Trial</a> No credit card required.
+            </div>
+        </section>
+        <section id="testimonial">
+            <h2 class="h3">Trusted by the stunningest</h2>
+            <article class="testimonial">
+                <img src="./img/bryan.png" alt="">
+                <section>
+                    <h3 class="h1">Bryan Saxon
+                        <small>Master Storyteller</small>
+                    </h3>
+                    <blockquote>
+                        <p>We couldn't decide exactly how to proceed when building our new website. There's only two real players
+                            these days, but we wanted the best of both worlds. That's when we found WixSpace.</p>
+                    </blockquote>
+                    <a href="http://base205.com" class="btn">See How Bryan Told His Story With Wixspace</a>
+                </section>
+            </article>
+            <article class="testimonial">
+                <img src="./img/panik.png" alt="">
+                <section>
+                    <h3 class="h1">Michael Panik
+                        <small>Founder, WixSpace</small>
+                    </h3>
+                    <blockquote>
+                        <p>I live by one belief: you can never take a joke too far.</p>
+                    </blockquote>
+                    <a href="http://base205.com" class="btn">See How Michael Laughed All The Way To The Bank</a>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./img/logo.png" id="logo">
+        <h4>This site paid for and approved by Keanu Reeves.</h4>
+        <section>
+            &copy;2018 WixSpace, All Rights Reserved.
+            <ul id="footer-links">
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <a href="#">About Keanu Reeves</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+</html>
